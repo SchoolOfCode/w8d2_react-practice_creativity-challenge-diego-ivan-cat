@@ -1,5 +1,5 @@
 import React from 'react'
-import Img from "../Img/ToDoList.jpg"
+import Img from "../Img/todogif.gif"
 
 export default function Header() {
     return (
