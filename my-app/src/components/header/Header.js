@@ -12,7 +12,7 @@ export default function Header() {
           
                 <div className='img-container'>
                     <div className='box'>
-                         <img src={Img}/>
+                         <img src={Img} alt='img'/>
                     </div>
                 </div>
            

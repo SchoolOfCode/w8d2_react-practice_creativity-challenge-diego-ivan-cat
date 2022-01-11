@@ -1,15 +1,29 @@
-import React from "react";
+import { useState } from "react";
 import Header from "./Header/Header";
 import Input from "./Input/Input";
-import Button from "./Input/Button";
+import List from "./List/List";
 import "./css/app.css";
+
 function App() {
+  
+  const [todos, setTodos] =useState([])
+  
+  function addItem(item) {
+    setTodos([...todos,item]);
+  }
+  function removeItem(index) {
+    setTodos([
+      ...todos.slice(0, index),
+      ...todos.slice(index +1)
+    ]);
+    
+  }
+  
   return (
     <div className="App">
       <Header/>
-      <Input/>
-      <Button/>
-
+      <Input  onSubmit={addItem}/>
+      <List arrayTodos={todos} onDelete={removeItem}/>
     </div>
   );
 }
