@@ -9,8 +9,8 @@ export default function Input({ onSubmit }) {
         
     }
     return (
-        <div>
-            <input onChange={handleChange} value={text} placeholder="Enter a To Do"></input>
+        <div className="input-search-box">
+            <input className="search-content" onChange={handleChange} value={text} placeholder="Enter a To Do"></input>
             <button onClick={function(){
                  onSubmit(text);
             }}>Add a To Do</button>

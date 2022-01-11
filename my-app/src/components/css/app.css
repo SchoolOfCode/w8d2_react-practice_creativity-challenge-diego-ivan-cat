@@ -1,5 +1,6 @@
 @import "./header.css";
 @import "./font.css";
+@import "./input.css";
 
   html{
     font-size: 30px;
