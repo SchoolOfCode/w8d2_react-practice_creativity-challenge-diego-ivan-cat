@@ -1,0 +1,10 @@
+@import "./header.css";
+
+
+  html{
+    font-size: 30px;
+  }
+  body{
+    padding: 0;
+    margin: 0;
+  }
